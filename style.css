@@ -181,7 +181,7 @@ section .title::after{
 }
 .services .title::after{
     background: #111;
-    content: "what i provide";
+    content: "what i learn";
 }
 .services .serv-content{
     display: flex;
@@ -240,12 +240,12 @@ section .title::after{
     display: inline-block;
     background: crimson;
     color: #fff;
-    font-size: 18px;
+    font-size: 13ssszpx;
     font-weight: 500;
-    padding: 8px 16px;
-    margin-top: 20px;
-    border-radius: 6px;
-    border: 2px solid crimson;
+    padding: 4px 6px;
+    margin-top: 5px;
+    border-radius: 4px;
+    border: 1px solid crimson;
     transition: all 0.3s ease;
 }
 .skills .skills-content .left a:hover{
@@ -303,6 +303,60 @@ section .title::after{
     align-items: center;
 }
 
+/* certificate styling */
+.certificate{
+    background:#111;
+    color: #fff;
+}
+.certificate .title::before{
+    background: #fff;
+}
+.certificate .title::after{
+    background: #111;
+    content: "what i get";
+}
+.certificate .serv-content{
+    display: flex;
+    justify-content: center;
+}
+.certificate .serv-content .card{
+    width: calc(33% - 20px);
+    background: #222;
+    text-align: center;
+    border-radius: 6px;
+    padding: 50px 25px;
+    cursor: pointer;
+    margin: 30px;
+    transition: all 0.3s ease;
+}
+.certificate .serv-content .card .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+.certificate .serv-content .card:hover{
+    background: crimson;
+    color: #fff;
+}
+.certificate .serv-content .card .box{
+    transition: all 0.3s ease;
+}
+.certificate .serv-content .card:hover .box{
+    transform: scale(1.05);
+}
+.certificate .serv-content .card i{
+    font-size: 50px;
+    color: crimson;
+    transition: color 0.3s ease;
+}
+.certificate .serv-content .card:hover i{
+    color: #fff;
+}
+.certificate .serv-content .card a{
+    font-weight: 600;
+    font-size: 20px;
+    color: rgb(114, 213, 114);
+}
 
 /* contact styling */
 .contact .title::after{
