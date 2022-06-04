@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Website</title>
+    <title>Document</title>
     <link rel="stylesheet" href="./style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
@@ -18,7 +18,7 @@
                 <li><a href="#">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skill</a></li>
-                <li><a href="#services">Service</a></li>
+                <li><a href="#services">Education</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
@@ -52,7 +52,7 @@
                         
                         If you want to know more about me, send me a message or reach out to me at
                         shanishacharya@gmail.com</p>
-                    <a href="./shanishCV.pdf" target="_blank">Download CV</a>
+                    <a href="./myCV.pdf" target="_blank">Download CV</a>
                 </div>
             </div>
         </div>
@@ -62,21 +62,25 @@
 
     <section class="services" id="services">
         <div class="max-width">
-            <h2 class="title">My Service</h2>
+            <h2 class="title">Education Details</h2>
             <div class="serv-content">
                 <div class="card">
                     <div class="box">
-                        <i class="fas fa-paint-brush"></i>
-                        <div class="text">Web Design</div>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem quia sunt, quasi quo illo enim.</p>
+                        <i class="fas fa-chart-line"></i>
+                        <div class="text">BCA</div>
+                        <p>A.N College , Patna</p>
+                        <p>Session - (2018-2021)</p>
+                        <p>Percentage - 74.87%</p>
                     </div>
                 </div>
 
                 <div class="card">
                     <div class="box">
                         <i class="fas fa-chart-line"></i>
-                        <div class="text">Advertising</div>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem quia sunt, quasi quo illo enim.</p>
+                        <div class="text">MCA</div>
+                        <p>Motilal Nehru Institute of Technology , Allahabad</p>
+                        <p>Session - (2021-Present)</p>
+                        <p>CPI - 8.5</p>
                     </div>
                 </div>
             </div>
@@ -89,9 +93,12 @@
             <h2 class="title">My skills</h2>
             <div class="skills-content">
                 <div class="column left">
-                    <div class="text">My creative skills & experiences.</div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, ratione error est recusandae consequatur, iusto illum deleniti quidem impedit, quos quaerat quis minima sequi. Cupiditate recusandae laudantium esse, harum animi aspernatur quisquam et delectus ipsum quam alias quaerat? Quasi hic quidem illum. Ad delectus natus aut hic explicabo minus quod.</p>
-                    <a href="#">Read more</a>
+                    <div class="text">My Creative Skills & Live Project.</div>
+                    <!-- <p>1.CRUD Application</p> -->
+                    <p><a href="https://aryashanish.github.io/CRUD-Application/" target="_blank">CRUD Application</a></p>
+                    <p><a href="https://aryashanish.github.io/Weather-Application/" target="_blank">Weather Application</a></p>
+                    <p><a href="https://aryashanish.github.io/tictaktoe/" target="_blank">Tic Tak Toe</a></p>
+                    <p><a href="https://aryashanish.github.io/Portfolio/" target="_blank">Portfolio Webpage</a></p>
                 </div>
                 <div class="column right">
                     <div class="bars">
@@ -148,13 +155,13 @@
             <div class="contact-content">
                 <div class="column left">
                     <div class="text">Get in Touch</div>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos harum corporis fuga corrupti. Doloribus quis soluta nesciunt veritatis vitae nobis?</p>
+                    <p>Contact Details </p>
                     <div class="icons">
                         <div class="row">
                             <i class="fas fa-user"></i>
                             <div class="info">
                                 <div class="head">Name</div>
-                                <div class="sub-title">Shanish</div>
+                                <div class="sub-title">Acharya Juhilal Shanish</div>
                             </div>
                         </div>
                         <div class="row">
@@ -175,23 +182,23 @@
                 </div>
                 <div class="column right">
                     <div class="text">Message me</div>
-                    <form action="#">
+                    <form action="">
                         <div class="fields">
                             <div class="field name">
-                                <input type="text" id="name" name="name" placeholder="Name" required>
+                                <input type="text" id="name" name="name" id="user_name" placeholder="Name">
                             </div>
                             <div class="field email">
-                                <input type="email" name="email" placeholder="Email" required>
+                                <input type="email" name="email" id="user_email" placeholder="Email">
                             </div>
                         </div>
                         <div class="field">
-                            <input type="text" name="sub" placeholder="Subject" required>
+                            <input type="text" name="sub" id="user_sub" placeholder="Subject">
                         </div>
                         <div class="field textarea">
-                            <textarea cols="30" rows="10" placeholder="Message.." name="message" required></textarea>
+                            <textarea cols="30" rows="10" id="user_message" placeholder="Message.." name="message"></textarea>
                         </div>
                         <div class="button-area">
-                            <button type="submit" onclick="getData()">Send message</button>
+                            <button type="submit">Send message</button>
                         </div>
                     </form>
                 </div>
